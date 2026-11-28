@@ -1,4 +1,5 @@
 import { QuickstartWidget } from '@/components/onboarding/quickstart-widget';
+import { ClientErrorNotice } from '@/components/client-error-notice';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
@@ -64,6 +65,7 @@ export default async function RootLayout({
             </NetworkProvider>
           </AuthProvider>
           <QuickstartWidget />
+          <ClientErrorNotice />
         </NextIntlClientProvider>
       </body>
     </html>
